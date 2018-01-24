@@ -13,7 +13,9 @@
       <li>This is an item </li>
 
       <script>
-        d3.selectAll('li').style('color', 'red');
+        d3.selectAll('li:nth-child(even)')
+        .style('color', 'red')
+        .html('This is an even number');
       </script>
 </body>
 </html>
