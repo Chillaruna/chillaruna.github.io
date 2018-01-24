@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> D3 </title>
+    <title> InfoViz4Mario </title>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style>
+        <span style="font-size:24px">
+        </span>
+    </style>
 </head>
 <body>
     <ul class="items">
@@ -15,7 +19,8 @@
       <script>
         d3.selectAll('li:nth-child(even)')
         .style('color', 'red')
-        .html('This is an even number');
+        .html('This is an even number')
+        classed('big', true);
       </script>
 </body>
 </html>
