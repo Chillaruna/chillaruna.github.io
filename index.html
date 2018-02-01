@@ -14,9 +14,13 @@
       <li>This is an item </li>
 
       <script>
-        d3.selectAll('li:nth-child(even)')
-        .style('color', 'red')
-        .html('This is an even number');
+          var numArray = [12, 20, 33, 40, 55]
+
+          d3.selectAll('.items li')
+              .data(numArray)
+              .text(function(d){
+                  return 'This is item number '+d;
+              })
       </script>
 </body>
 </html>
