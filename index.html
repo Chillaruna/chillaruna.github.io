@@ -89,7 +89,7 @@ d3.csv("Surveydata.csv", function(error, country) {
     .enter().append("g")
       .attr("class", "dimension")
       .attr("transform", function(d) { return "translate(" + x(d) + ")"; });
-
+console.log(country);
   // Add an axis and title.
   g.append("g")
       .attr("class", "axis")
