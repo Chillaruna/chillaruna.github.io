@@ -107,7 +107,7 @@ console.log(country);
       .attr("x", -8)
       .attr("width", 16);
   var projection = svg.selectAll(".background path, .foreground path")
-  .on("mouseover" function(d){
+  .on("mouseover", function(d){
     d3.select("#countryName").html(d.Country)
    })
 });
