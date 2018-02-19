@@ -110,6 +110,9 @@ console.log(country);
   .on("mouseover", function(d){
     d3.select("#countryName").html(d.Country)
    })
+  .on("mouseout", function(d){
+    d3.select("#countryName").html("");
+   })
 });
 
 // Returns the path for a given data point.
